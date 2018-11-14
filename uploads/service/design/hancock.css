@@ -1,0 +1,22 @@
+#JohnsMen {
+    margin:1em 0;
+}
+
+.JohnsMan {
+    cursor: pointer;
+    opacity:.5;
+    transition: all .3s ease;
+}
+.JohnsMan.active {
+    opacity:1;
+}
+
+#JohnsCode {
+    width: 100%;
+    min-height: 200px;
+    font-size: .9em;
+    margin:0 0 1em;
+}
+.uk-nestable-item {
+    cursor: move;
+}

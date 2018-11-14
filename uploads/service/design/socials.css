@@ -1,0 +1,367 @@
+@font-face {
+    font-family: "OfficinaSansBold";
+    src: url("fonts/OfficinaSansBold.eot");
+    src: url("fonts/OfficinaSansBold.eot?#iefix") format("embedded-opentype"),
+    url("fonts/OfficinaSansBold.woff") format("woff"),
+    url("fonts/OfficinaSansBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'ChiantiItalic';
+    src: url('fonts/Chianti-Italic.eot');
+    src: url('fonts/Chianti-Italic.woff') format('woff'),
+    url('fonts/Chianti-Italic.ttf') format('truetype'),
+    url('fonts/Chianti-Italic.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ChiantiBoldItalic';
+    src: url('fonts/Chianti-Bold-Italic.eot');
+    src: url('fonts/Chianti-Bold-Italic.woff') format('woff'),
+    url('fonts/Chianti-Bold-Italic.ttf') format('truetype'),
+    url('fonts/Chianti-Bold-Italic.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ChiantiBold';
+    src: url('fonts/Chianti-Bold.eot');
+    src: url('fonts/Chianti-Bold.woff') format('woff'),
+    url('fonts/Chianti-Bold.ttf') format('truetype'),
+    url('fonts/Chianti-Bold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SchlangeBold';
+    src: url('fonts/als_schlange_sans_bold.eot');
+    src: url('fonts/als_schlange_sans_bold.woff') format('woff'),
+    url('fonts/als_schlange_sans_bold.ttf') format('truetype'),
+    url('fonts/als_schlange_sans_bold.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'SchlangeLight';
+    src: url('fonts/als_schlange_sans_light.eot');
+    src: url('fonts/als_schlange_sans_light.woff') format('woff'),
+    url('fonts/als_schlange_sans_light.ttf') format('truetype'),
+    url('fonts/als_schlange_sans_light.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#upload-drop {
+    box-sizing: border-box;
+}
+
+.Brand {
+    display: none;
+    margin: 1em 0;
+}
+
+.Brand.first {
+    display: block;
+}
+
+.Category {
+    display: none;
+    margin: 2em 0;
+}
+
+.Hint {
+    margin: -1em 0 1em;
+    font-size: .7em;
+    color:#666;
+}
+
+#TitleDiv {
+    margin: 1em 0 0;
+    display: none;
+}
+
+#Title {
+    width: 100%;
+    max-width: 500px;
+}
+
+.Tile {
+    width: 500px;
+    position: relative;
+    margin: 1em 0;
+    overflow: hidden;
+    background: url(transparent.gif);
+}
+
+.TileI {
+    display: none;
+}
+
+.Photo {
+    width: 500px;
+    max-width: 1000%;
+    position: relative;
+}
+
+.Collage {
+    position: absolute;
+    overflow: hidden;
+}
+
+.CollageA {
+    position: absolute;
+    cursor: pointer;
+}
+
+.Logo {
+    width: 500px;
+    max-width: 1000%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.Text {
+    position: absolute;
+    color: #fff;
+    font-weight: bold;
+    line-height: 1em;
+    white-space: nowrap;
+}
+
+.Digit {
+    position: absolute;
+    color: #fff;
+    font-weight: bold;
+    line-height: 1em;
+    white-space: nowrap;
+}
+
+.TileUl {
+    font-weight: bold;
+}
+
+.CollageUl {
+    font-weight: bold;
+    font-size: inherit;
+}
+
+.CollageUl a.active {
+    background: #1e90ff;
+    color:#fff;
+}
+
+#Resize {
+    margin: 0 0 150px;
+}
+
+#Area {
+    margin: 1em 0;
+}
+
+.imgareaselect-selection {
+    background-size: cover;
+}
+
+.imgareaselect-outer {
+    background-color: #fff;
+}
+
+#ButtonCropDiv {
+    display: none;
+}
+#ButtonCrop {
+    font-size: 2em;
+    padding: 10px 50px;
+}
+
+#Preview {
+    background: #ccc;
+    padding: 1em;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 9;
+    display: none;
+}
+
+#Preview a {
+    width: 96px;
+    height: 96px;
+    background: #eee;
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    *display: inline;
+    z-index: 1;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    position: relative;
+    margin: 0 4px 4px 0;
+}
+
+#Preview img {
+    max-width: 96px;
+    max-height: 96px;
+}
+
+#PreviewLoading {
+    font-size: 2em;
+    display: none;
+    margin: 30px;
+}
+
+#Preview.loading #PreviewLoading {
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    *display: inline;
+    z-index: 1;
+}
+
+#uploaded {
+    margin: 1em 0;
+    display: none;
+}
+
+.uploaded {
+    width: 96px;
+    height: 96px;
+    background: #eee;
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    *display: inline;
+    z-index: 1;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    position: relative;
+    margin: 0 4px 4px 0;
+}
+
+.uploaded i {
+    position: absolute;
+    font-size: 2em;
+    font-family: FontAwesome;
+    font-style: normal;
+    line-height: 1em;
+    right: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+}
+
+.uploaded i:before {
+    position: absolute;
+    content: "\f00d";
+    width: 30px;
+    height: 30px;
+    right: 0px;
+    color: #fff;
+    top: 0;
+}
+
+.uploaded i:after {
+    position: absolute;
+    content: "\f057";
+    width: 30px;
+    height: 30px;
+    right: 0px;
+    top: 1px;
+}
+
+.uploaded img {
+    max-width: 96px;
+    max-height: 96px;
+}
+
+.uploaded.active {
+    background: #1e90ff;
+}
+
+.uploaded.active img {
+    opacity: .5;
+}
+
+.uploaded.active i {
+    display: none;
+}
+
+.uploaded i:hover {
+    color: #1e90ff;
+}
+
+#col2 {
+    width: 535px;
+}
+
+#Edit {
+    margin:2em 0 0;
+    user-select: none;
+    -webkit-user-select: none;
+}
+#Edit i {
+    display: inline-block;
+    width:30px;
+    height:30px;
+    background: #ddd;
+    cursor: pointer;
+    text-align: center;
+    color:#666;
+}
+#Edit i:hover {
+    background: #1e90ff;
+    color:#fff;
+}
+#Edit i:after {
+    font-size: 1em;
+    font-family: FontAwesome;
+    font-style: normal;
+    line-height: 30px;
+    display:block;
+}
+#Edit i.undo:after {
+    content: '\f048';
+}
+#Edit i.mirror:after {
+    content: '\f07e';
+}
+#Edit i.rotate:after {
+    content: '\f01e';
+}
+#Edit i.brightplus:after {
+    content: '\f185↑';
+}
+#Edit i.brightminus:after {
+    content: '\f185↓';
+}
+#Edit i.contrplus:after {
+    content: '\f042↑';
+}
+#Edit i.contrminus:after {
+    content: '\f042↓';
+}
+#Edit i.loading {
+    color: #fff;
+    background:#1e90ff;
+}
+#Edit i.loading:after {
+    content: '\f110';
+    animation: uk-rotate 2s infinite linear;
+}
+.TitleResizeVal {
+    display: inline-block;
+}

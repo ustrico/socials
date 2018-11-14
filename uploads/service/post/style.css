@@ -1,0 +1,42 @@
+.TabBodies {
+    position: relative;
+}
+.TabBody.Brand {
+    top:0;
+    padding:1em 0;
+    width:100%;
+}
+.CalendarMonth {
+    margin:0 0 1em;
+}
+.CalendarMonth .day {
+    width: 13%;
+    box-sizing: border-box;
+    margin:0 1% 1% 0;
+    background: #eee;
+    border-radius: 3px;
+    display: inline-block;
+    padding:0 0 0 1em;
+    position: relative;
+}
+.CalendarMonth .day.empty {
+    padding:0;
+    opacity:0;
+}
+.CalendarMonth .daypart {
+    padding:.5em .5em;
+    cursor: pointer;
+}
+.CalendarMonth .daypart1 {
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+}
+.CalendarMonth .daynum {
+    position: absolute;
+    top:.2em;
+    left:.2em;
+    color:#bbb;
+    font-size:.6em;
+    width:1em;
+    text-align: right;
+}
